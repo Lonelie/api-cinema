@@ -23,15 +23,12 @@ app.delete('/users/:id', users.deleteUser);
 
 app.get('/users/:id/likes', likes.findById);
 app.get('/users/:id/dislikes', dislikes.findById);
-//app.put('/users/:id', users.updateUsers);
-//app.delete('/users/:id', users.deleteUsers);*/
+
 
 /**** movies ***/
 
-/*** aimer un film ***/
 
 app.post('/users/:user_id/likes/:movie_id');
-
 app.get('/users/:id/movies/:id', movies.findById);
  
 app.listen(3000);
